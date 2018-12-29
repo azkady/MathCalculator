@@ -8,60 +8,60 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Reimann extends AppCompatActivity {
-    private EditText BatasAtas, BatasBawah, bagian, txt_h, fx, txt_reimann;
-    private Button btn_Reimann, btn_h, btn_reset;
-    private TextView cara_h, cara_reimann;
+    private EditText BatasAtas_R, BatasBawah_R, bagian_R, txt_h_R, fx, txt_reimann;
+    private Button btn_Reimann, btn_h_R, btn_reset_R;
+    private TextView cara_h_R, cara_reimann;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reimann);
-        BatasAtas = findViewById(R.id.BatasAtas);
-        BatasBawah = findViewById(R.id.BatasBawah);
-        bagian = findViewById(R.id.bagian);
-        cara_h = findViewById(R.id.cara_h);
+        BatasAtas_R = findViewById(R.id.BatasAtas_R);
+        BatasBawah_R = findViewById(R.id.BatasBawah_R);
+        bagian_R = findViewById(R.id.bagian_R);
+        cara_h_R = findViewById(R.id.cara_h_R);
         cara_reimann = findViewById(R.id.cara_reimann);
-        txt_h = findViewById(R.id.txt_h);
+        txt_h_R = findViewById(R.id.txt_h_R);
         fx = findViewById(R.id.fx);
         btn_Reimann = findViewById(R.id.btn_reimann);
-        btn_h = findViewById(R.id.btn_h);
-        btn_reset = findViewById(R.id.btn_reset);
+        btn_h_R = findViewById(R.id.btn_h_R);
+        btn_reset_R = findViewById(R.id.btn_reset_R);
         txt_reimann = findViewById(R.id.txt_reimann);
         txt_reimann.setEnabled(false);
 
         btn_Reimann.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double h = Double.parseDouble(txt_h.getText().toString());
+                double h = Double.parseDouble(txt_h_R.getText().toString());
                 double fx_ = Double.parseDouble(fx.getText().toString());
                 double hasil_reimann = h*fx_;
-                cara_reimann.setText(txt_h.getText()+"*"+fx.getText());
+                cara_reimann.setText(txt_h_R.getText()+"*"+fx.getText());
                 txt_reimann.setText(String.valueOf(hasil_reimann));
             }
         });
-        btn_h.setOnClickListener(new View.OnClickListener() {
+        btn_h_R.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double batas_a = Double.parseDouble(BatasAtas.getText().toString());
-                double batas_b = Double.parseDouble(BatasBawah.getText().toString());
-                double bagian_ = Double.parseDouble(bagian.getText().toString());
+                double batas_a = Double.parseDouble(BatasAtas_R.getText().toString());
+                double batas_b = Double.parseDouble(BatasBawah_R.getText().toString());
+                double bagian_ = Double.parseDouble(bagian_R.getText().toString());
                 double hasil_h = (batas_a-batas_b)/bagian_;
-                cara_h.setText("("+BatasAtas.getText()+"-"+BatasBawah.getText()+")/"+bagian.getText());
-                txt_h.setText(String.valueOf(hasil_h));
-                txt_h.setEnabled(false);
+                cara_h_R.setText("("+BatasAtas_R.getText()+"-"+BatasBawah_R.getText()+")/"+bagian_R.getText());
+                txt_h_R.setText(String.valueOf(hasil_h));
+                txt_h_R.setEnabled(false);
             }
         });
-        btn_reset.setOnClickListener(new View.OnClickListener() {
+        btn_reset_R.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BatasAtas.setText("");
-                BatasBawah.setText("");
-                bagian.setText("");
-                txt_h.setText("");
+                BatasAtas_R.setText("");
+                BatasBawah_R.setText("");
+                bagian_R.setText("");
+                txt_h_R.setText("");
                 fx.setText("");
                 txt_reimann.setText("");
-                cara_h.setText("");
+                cara_h_R.setText("");
                 cara_reimann.setText("");
-                txt_h.setEnabled(true);
+                txt_h_R.setEnabled(true);
             }
         });
     }

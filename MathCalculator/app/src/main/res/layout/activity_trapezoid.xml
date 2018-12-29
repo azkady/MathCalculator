@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reimann"
+    tools:context=".Trapezoid"
     android:orientation="vertical">
 
     <ScrollView
@@ -16,63 +16,82 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <EditText
-                android:id="@+id/BatasAtas_R"
+                android:id="@+id/BatasAtas_T"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Batas Atas"
                 android:inputType="numberDecimal"/>
             <EditText
-                android:id="@+id/BatasBawah_R"
+                android:id="@+id/BatasBawah_T"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Batas Bawah"
                 android:inputType="numberDecimal"/>
             <EditText
-                android:id="@+id/bagian_R"
+                android:id="@+id/bagian_T"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Bagian"
                 android:inputType="numberDecimal"/>
             <Button
-                android:id="@+id/btn_h_R"
+                android:id="@+id/btn_h_T"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:text="hitung h"/>
             <TextView
-                android:id="@+id/cara_h_R"
+                android:id="@+id/cara_h_T"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="20dp"/>
             <EditText
-                android:id="@+id/txt_h_R"
+                android:id="@+id/txt_h_T"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="h"
                 android:inputType="numberDecimal"/>
-            <EditText
-                android:id="@+id/fx"
-                android:layout_marginTop="20dp"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="total f(x)"
-                android:inputType="numberDecimal"/>
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/fo_T"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="total fo"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/fi_T"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="total fi"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:id="@+id/fn_T"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="total fn"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+
             <Button
-                android:id="@+id/btn_reimann"
+                android:id="@+id/btn_trapezoid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:text="hitung"/>
             <TextView
-                android:id="@+id/cara_reimann"
+                android:id="@+id/cara_trapezoid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -93,12 +112,12 @@
                     android:text="Hasil :"
                     android:textSize="20dp"/>
                 <EditText
-                    android:id="@+id/txt_reimann"
+                    android:id="@+id/txt_trapezoid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
             <Button
-                android:id="@+id/btn_reset_R"
+                android:id="@+id/btn_reset_T"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
