@@ -52,7 +52,7 @@ public class Simpson13 extends AppCompatActivity {
                 double HdibagiTiga = nH/3;
                 double hitungF = nf0+(nf1*4)+nf2;
                 double Hasils13 = HdibagiTiga*hitungF;
-                cara_simpson13.setText("("+nH+"/3"+"("+f0.getText()+" + "+f1.getText()+"*4 + "+f2.getText()+"))");
+                cara_simpson13.setText("("+H.getText()+"/3"+"("+f0.getText()+" + "+f1.getText()+"*4 + "+f2.getText()+"))");
                 hasils13.setText(String.valueOf(Hasils13));
             }
         });
@@ -66,6 +66,8 @@ public class Simpson13 extends AppCompatActivity {
                 f0.setText("");
                 f1.setText("");
                 f2.setText("");
+                cara_h_S13.setText("");
+                cara_simpson13.setText("");
                 hasils13.setText("");
                 H.setEnabled(true);
             }

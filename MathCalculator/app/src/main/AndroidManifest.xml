@@ -10,9 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Reimann" />
-        <activity android:name=".Trapezoid">
-
-        </activity>
+        <activity android:name=".Trapezoid"></activity>
         <activity android:name=".Simpson13" />
         <activity android:name=".MainMenu">
             <intent-filter>
@@ -21,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Simpson38"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Simpson13"
+    tools:context=".Simpson38"
     android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
@@ -20,11 +20,11 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/simpson13" />
+                android:src="@drawable/simpson38" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="*Untuk persamaan kuadrat cirinya memiliki 3 titik data"
+                android:text="*Untuk persamaan kubik cirinya memiliki 4 titik data"
                 android:layout_gravity="left"
                 android:layout_marginBottom="15dp"/>
             <TextView
@@ -38,38 +38,38 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:text="H = (b-a)/2
-(dibagi 2 karena hanya ada 2 partisi)"/>
+                android:text="H = (b-a)/3
+(dibagi 3 karena hanya ada 3 partisi)"/>
             <EditText
-                android:id="@+id/BatasAtass13"
+                android:id="@+id/BatasAtass38"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Batas Atas (b)"
                 android:inputType="numberDecimal|numberSigned"/>
             <EditText
-                android:id="@+id/BatasBawahs13"
+                android:id="@+id/BatasBawahs38"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="BatasBawah (a)"
                 android:inputType="numberDecimal|numberSigned"/>
             <Button
-                android:id="@+id/btn_cariHs13"
+                android:id="@+id/btn_cariHs38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:text="hitung h"/>
             <TextView
-                android:id="@+id/cara_h_S13"
+                android:id="@+id/cara_h_S38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="20dp"/>
             <EditText
-                android:id="@+id/txt_nilaiH13"
+                android:id="@+id/txt_nilaiH38"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Masukan nilai f(0), f(1), dan f(2) ke dalam Rumus"/>
+                android:text="Masukan nilai f(0), f(1), f(2) dan f(3) ke dalam Rumus"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,35 +87,42 @@
                 android:layout_gravity="center"
                 android:gravity="center">
                 <EditText
-                    android:id="@+id/f0_s13"
+                    android:id="@+id/f0_s38"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Nilai f(0)"
                     android:inputType="numberDecimal|numberSigned"/>
                 <EditText
-                    android:id="@+id/f1_s13"
+                    android:id="@+id/f1_s38"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Nilai f(1)"
                     android:inputType="numberDecimal|numberSigned"/>
                 <EditText
-                    android:id="@+id/f2_s13"
+                    android:id="@+id/f2_s38"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Nilai f(2)"
                     android:inputType="numberDecimal|numberSigned"/>
+                <EditText
+                    android:id="@+id/f3_s38"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nilai f(3)"
+                    android:inputType="numberDecimal|numberSigned"/>
             </LinearLayout>
             <Button
-                android:id="@+id/btn_hitungs13"
+                android:id="@+id/btn_hitungs38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hitung Simpson 1/3"
+                android:text="Hitung Simpson 3/8"
                 android:layout_gravity="center"/>
             <TextView
-                android:id="@+id/cara_simpson13"
+                android:id="@+id/cara_simpson38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -136,13 +143,13 @@
                     android:text="Hasil :"
                     android:textSize="20dp"/>
                 <EditText
-                    android:id="@+id/txt_hasils13"
+                    android:id="@+id/txt_hasils38"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal|numberSigned"/>
             </LinearLayout>
             <Button
-                android:id="@+id/btn_resets13"
+                android:id="@+id/btn_resets38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
