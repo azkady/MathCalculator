@@ -32,5 +32,11 @@
         android:text="Simpson 3/8"
         android:id="@+id/menu_simpson38"
         android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integrasi gauss 2 titik"
+        android:id="@+id/menu_gauss2"
+        android:layout_marginBottom="20dp" />
 
 </LinearLayout>
