@@ -15,19 +15,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/reimann" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pertama cari nilai h"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/cara_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="h = (b-a)/bagian"/>
             <EditText
                 android:id="@+id/BatasAtas_R"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Batas Atas"
+                android:hint="Batas Atas (b)"
                 android:inputType="numberDecimal"/>
             <EditText
                 android:id="@+id/BatasBawah_R"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Batas Bawah"
+                android:hint="Batas Bawah (a)"
                 android:inputType="numberDecimal"/>
             <EditText
                 android:id="@+id/bagian_R"
@@ -57,6 +76,11 @@
                 android:layout_height="wrap_content"
                 android:hint="h"
                 android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Masukan nilai f(x) ke dalam Rumus"/>
             <EditText
                 android:id="@+id/fx"
                 android:layout_marginTop="20dp"

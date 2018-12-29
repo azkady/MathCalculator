@@ -28,6 +28,7 @@ public class Simpson13 extends AppCompatActivity {
         hitungHs13 = findViewById(R.id.btn_cariHs13);
         hitungs13 = findViewById(R.id.btn_hitungs13);
         resets13 = findViewById(R.id.btn_resets13);
+        hasils13.setEnabled(false);
 
         hitungHs13.setOnClickListener(new View.OnClickListener() {
             @Override
