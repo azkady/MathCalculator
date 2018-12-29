@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Simpson38" />
-        <activity android:name=".Gauss2"></activity>
+        <activity android:name=".Gauss2" />
+        <activity android:name=".gauss3"></activity>
     </application>
 
 </manifest>

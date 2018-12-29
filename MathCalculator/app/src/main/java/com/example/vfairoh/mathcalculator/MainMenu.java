@@ -16,7 +16,7 @@ public class MainMenu extends AppCompatActivity {
         btnFunction();
     }
 
-    Button btnReimann, btnTrapezoid, btnSimpson13, btnSimpson38, btnSimpson, btnGauss2;
+    Button btnReimann, btnTrapezoid, btnSimpson13, btnSimpson38, btnSimpson, btnGauss2, btnGauss3;
 
     private void setVariable(){
         btnReimann = findViewById(R.id.menu_reimann);
@@ -24,6 +24,7 @@ public class MainMenu extends AppCompatActivity {
         btnSimpson13 = findViewById(R.id.menu_simpson13);
         btnSimpson38 = findViewById(R.id.menu_simpson38);
         btnGauss2 = findViewById(R.id.menu_gauss2);
+        btnGauss3 = findViewById(R.id.menu_gauss3);
     }
 
     private void btnFunction(){
@@ -63,6 +64,14 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Gauss2.class);
+                startActivity(i);
+            }
+        });
+
+        btnGauss3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), gauss3.class);
                 startActivity(i);
             }
         });
