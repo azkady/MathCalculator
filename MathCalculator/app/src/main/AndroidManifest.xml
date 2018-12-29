@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Reimann">
+        <activity android:name=".Reimann" />
+        <activity android:name=".Trapezoid">
 
         </activity>
-        <activity android:name=".Trapezoid">
+        <activity android:name=".Simpson13" />
+        <activity android:name=".MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

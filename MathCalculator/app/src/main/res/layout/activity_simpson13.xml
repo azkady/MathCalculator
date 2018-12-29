@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Simpson13"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/simpson13" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pertama cari nilai H"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/cara_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="H = (b-a)/2
+(dibagi 2 karena hanya ada 2 partisi)"/>
+            <EditText
+                android:id="@+id/BatasAtass13"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Batas Atas (b)"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/BatasBawahs13"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BatasBawah (a)"
+                android:inputType="number"/>
+            <Button
+                android:id="@+id/btn_cariHs13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="hitung h"/>
+            <TextView
+                android:id="@+id/cara_h_S13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/txt_nilaiH13"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="H"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Masukan nilai f(0), f(1), dan f(2) ke dalam Rumus"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/f0_s13"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nilai f(0)"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/f1_s13"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nilai f(1)"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/f2_s13"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nilai f(2)"
+                android:inputType="number"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/btn_hitungs13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hitung Simpson 1/3"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/cara_simpson13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Hasil :"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/txt_hasils13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_resets13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="reset"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
