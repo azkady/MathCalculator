@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".Simpson38" />
         <activity android:name=".Gauss2" />
-        <activity android:name=".gauss3"></activity>
+        <activity android:name=".gauss3" />
+        <activity android:name=".Simpson"></activity>
     </application>
 
 </manifest>

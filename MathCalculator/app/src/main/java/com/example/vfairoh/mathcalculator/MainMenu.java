@@ -21,6 +21,7 @@ public class MainMenu extends AppCompatActivity {
     private void setVariable(){
         btnReimann = findViewById(R.id.menu_reimann);
         btnTrapezoid = findViewById(R.id.menu_trapezoid);
+        btnSimpson = findViewById(R.id.menu_simpson);
         btnSimpson13 = findViewById(R.id.menu_simpson13);
         btnSimpson38 = findViewById(R.id.menu_simpson38);
         btnGauss2 = findViewById(R.id.menu_gauss2);
@@ -40,6 +41,14 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Trapezoid.class);
+                startActivity(i);
+            }
+        });
+
+        btnSimpson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Simpson.class);
                 startActivity(i);
             }
         });

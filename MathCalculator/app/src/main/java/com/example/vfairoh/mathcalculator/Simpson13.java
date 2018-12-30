@@ -70,6 +70,7 @@ public class Simpson13 extends AppCompatActivity {
                 cara_simpson13.setText("");
                 hasils13.setText("");
                 H.setEnabled(true);
+                b.requestFocus();
             }
         });
     }

@@ -74,6 +74,7 @@ public class Simpson38 extends AppCompatActivity {
                 cara_simpson38.setText("");
                 hasils38.setText("");
                 H.setEnabled(true);
+                b.requestFocus();
             }
         });
     }

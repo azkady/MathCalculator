@@ -23,6 +23,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Aturan Simpson"
+        android:id="@+id/menu_simpson"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Simpson 1/3"
         android:id="@+id/menu_simpson13"
         android:layout_marginBottom="20dp" />
