@@ -50,5 +50,10 @@
         android:text="Integrasi gauss 3 titik"
         android:id="@+id/menu_gauss3"
         android:layout_marginBottom="20dp" />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integrasi"
+        android:id="@+id/menu_"
+        android:layout_marginBottom="20dp" />
 </LinearLayout>
